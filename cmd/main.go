@@ -7,6 +7,8 @@ import (
 	"github.com/influxdata/telegraf/plugins/common/shim"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
+	
+	_ "github.com/zachstence/hwinfo-telegraf-plugin/plugins/inputs/hwinfo"
 
 )
 
