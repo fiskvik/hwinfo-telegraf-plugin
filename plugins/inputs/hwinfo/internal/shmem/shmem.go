@@ -13,8 +13,8 @@ import (
 
 // Arbitrary values chosen to somehow bound the size of the buffer we are creating
 // TODO is there a better way to do this?
-const maxSensors = 50
-const maxReadings = 500
+const maxSensors = 100
+const maxReadings = 1000
 const headerLength = C.sizeof_HWiNFO_SENSORS_SHARED_MEM2
 const sensorsLength = maxSensors * C.sizeof_HWiNFO_SENSORS_SENSOR_ELEMENT
 const readingsLength = maxReadings * C.sizeof_HWiNFO_SENSORS_READING_ELEMENT
