@@ -47,7 +47,7 @@ func Read() (*HWiNFO, error) {
 	actualBytes := len(data)
 	if actualBytes < expectedBytes {
 		// TODO how to resolve this? Config options? Read header first to determine buffer size?
-		log.Fatal().Msg("didn't read full shared memory buffer")
+		log.Println("Debug: Didn't read full shared memory buffer!")
 	}
 
 	return shmem, nil
